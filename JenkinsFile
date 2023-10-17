@@ -16,9 +16,6 @@ pipeline {
 
           // Create the Git tag
           sh "git tag ${tag}"
-
-          // Push the Git tag to the remote repository
-          sh "git push origin ${tag}"
         }
       }
     }
